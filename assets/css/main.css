@@ -1,0 +1,869 @@
+/*
+  ========================================
+  Cusom fonts
+  ========================================
+*/
+
+@font-face {
+  font-family: Vazir;
+  src: url('../fonts/vazir/Vazir.eot');
+  src: url('../fonts/vazir/Vazir.eot?#iefix') format('embedded-opentype'),
+	   url('../fonts/vazir/Vazir.woff') format('woff'),
+	   url('../fonts/vazir/Vazir.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: VazirBold;
+  src: url('../fonts/vazir/Vazir-Bold.eot');
+  src: url('../fonts/vazir/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+	   url('../fonts/vazir/Vazir-Bold.woff') format('woff'),
+	   url('../fonts/vazir/Vazir-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+/*
+  ========================================
+  Reset CSS
+  ========================================
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+	 -moz-box-sizing: border-box;
+		  box-sizing: border-box;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ========================================
+  body Custom style
+  ========================================
+*/
+body {
+
+}
+
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1, h2, h3, h4, h5, p {
+  margin-bottom: 22px;
+}
+
+
+/*
+  ========================================
+  Attachable and detachable features
+  ========================================
+*/
+
+.container {
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 1350px;
+}
+
+.rtl-direction {
+  direction: rtl;
+}
+
+.ltr-direction {
+  direction: ltr;
+}
+
+.center {
+  text-align: center;
+}
+
+.center-bold {	
+  text-align: center;
+  font-weight: bolder;
+}
+
+.bg-color {
+  background-color: #000;
+}
+
+.font-color-white {
+  color: #FFF;
+}
+
+.font-color-0c0 {
+  color: #00CC00;
+}
+
+.font-family-vazir {
+  font-family: "Vazir", Mono;
+}
+
+.font-family-consolas {
+  font-family: Consolas, monaco, monospace;
+}
+
+.font-weight-bolder {
+  font-weight: bolder;
+}
+
+.none-text-decoration {
+  color: #00CC00;
+  text-decoration: none;
+
+}
+
+.margin-bottom-16px {
+  margin-bottom: 16px;
+}
+
+.margin-right-25px {
+  margin-right:25px;
+}
+
+.none-text-decoration-none-color{
+  text-decoration: none;
+}
+
+.underline-border {
+
+}
+
+.underline-border a:link, .underline-border a:visited, 
+.underline-border a:hover, .underline-border a:active {
+  border-bottom: 1px solid;
+}
+
+.underline-border-dotted a:link, .underline-border-dotted a:visited, 
+.underline-border-dotted a:hover, .underline-border-dotted a:active {
+  border-bottom: 1px dotted;
+}
+
+.highlight-text {
+  color: #CCCCCC;
+  background-color: #008000;
+  padding-right: 8px;
+  padding-bottom: 2px;
+  padding-left: 8px;  
+  margin: 2px;
+}
+
+.highlight-text a:link, .highlight-text a:visited, 
+.highlight-text a:hover, .highlight-text a:active {
+  border-bottom: 1px dotted;
+}
+
+.small-font-size {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.image-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.foot-note-reference {
+  font-weight: 300;
+  font-size: 12px;
+  color: #CCCCCC;
+  padding-top: 2px;
+  padding-right: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+  margin-top: 2px;
+  margin-right: 2px; 
+  margin-bottom: 2px;
+  margin-left: 8px;
+  border-bottom: 1px dotted;
+}
+
+.foot-note {
+  font-weight: 300;
+  font-size: 13px;
+  color: #00CC00;
+  padding-top: 2px;
+  padding-right: 2px;
+  padding-bottom: 2px;
+  padding-left: 8px;
+  margin: 2px;
+}
+
+.foot-note-header {
+  margin-bottom: 8px;
+  font-size: x-large;
+  padding-bottom: 8px;
+}
+
+.top-level-list {
+
+}
+
+/* LAGACY CODE :))) */
+.sub-level-list {
+  padding-left: 32px;
+}
+
+.sub-level-list-left {
+	padding-left: 32px;
+}
+
+.sub-level-list-right {
+	padding-right: 32px;
+}
+
+.list-style-type-persian {
+  list-style-type: persian;
+}
+
+.list-style-type-circle {
+  list-style-type: circle;
+}
+
+.list-style-type-square {
+  list-style-type: square;
+}
+
+.list-style-type-disc {
+  list-style-type: disc;
+}
+
+.number-box {
+  border-radius: 0%;
+  -moz-border-radius: 0%;
+  -webkit-border-radius: 0%;
+  width: 35px;
+  height: 35px;
+  background: #00CC00;
+  color: #FFF;
+  float: right;
+  text-align: center;
+  font-size: 24px;
+  padding-top: 5.5px;
+  margin-left: 16px;
+}
+
+.number-box:after,
+.number-box:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*
+  ========================================
+  Main page section
+  ========================================
+*/
+
+.main {
+  min-height: 460px;
+}
+
+/*
+  ========================================
+  Side bar
+  ========================================
+*/
+
+.side-bar {
+  float: right;
+  margin: 0 1.5%;
+  width: 25%;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #000;
+}
+
+/*
+  ========================================
+  Navigation, Profile lists - About
+  ========================================
+*/
+
+.navigation-list {
+  list-style-type: square;
+  padding-left: 12px;
+}
+
+.navigation-list a {
+  display: block;
+  padding: 8px 0 8px 16px;
+}
+
+.navigation {
+  border-bottom: 1px solid #00CC00;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.active {
+  font-weight: bolder;
+  text-decoration: line-through;
+}
+
+.about {
+  text-align: justify;
+  border-bottom: 1px solid #00CC00;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  line-height: 1.3em;
+}
+
+.profiles {
+  padding-top: 8px;
+  padding-bottom: 16px;
+
+}
+
+.profiles-list {
+  list-style-type: square;
+  padding-left: 12px;
+}
+
+.profiles-list a {
+  display: block;
+  padding: 8px 0 8px 16px;
+}
+
+.profiles-list a:link, .profiles-list a:visited,
+.navigation-list a:link, .navigation-list a:visited {
+  color: #00CC00;
+  text-decoration: none;
+}
+
+.profiles-list a:hover, .profiles-list a:active,
+.navigation-list a:hover, .navigation-list a:active {
+  color: #FFF;
+  background-color: #00A500
+}
+
+/*
+  ========================================
+  Main Context
+  ========================================
+*/
+
+.context-main {
+  float: left;
+  margin: 0 1.5%;
+  width: 68%;
+  line-height: 1.35em;
+}
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+
+.header {
+  text-align: center;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.header-main {
+  margin-bottom: 8px;
+  font-weight: bolder;
+  font-weight: 900;
+  font-size: 36px;
+}
+
+.tagline {
+  
+}
+
+.logo-place-holder {
+  float: right;
+  margin: 0 1.5%;
+  width: 25%;
+  border-top: 4px solid #648880;
+  font-size: 48px;
+  line-height: 44px;
+  padding: 40px 0 22px 0;
+}
+
+.header-title {
+  float: left;
+  margin: 0 1.5%;
+  width: 68%;
+  border-bottom: 1px solid #00CC00;
+}
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+
+.footer {
+  clear: both;
+}
+
+.footer-place-holder {
+  float: right;
+  margin: 0 1.5%;
+  width: 25%;
+  border-bottom: 4px solid #648880;
+  font-size: 48px;
+  line-height: 44px;
+  padding: 40px 0 22px 0;
+}
+
+.footer-content {
+  float: left;
+  margin: 0 1.5%;
+  width: 68%;
+  border-top: 1px solid #00CC00;
+  padding-top: 22px;
+  text-align: center;
+}
+
+.footer-content a:link, .footer-content a:visited{
+  color: #00CC00;
+  text-decoration: none;
+}
+
+.footer-content a:hover, .footer-content a:active {
+  color: #00CC00;
+  border-bottom: 1px solid #00CC00;
+}
+
+/*
+  ========================================
+  LiCENSE
+  ========================================
+*/
+
+.license-text {
+  text-align: center;
+  direction: ltr;
+  padding-top: 64px;
+}
+
+.license-text a:link, .license-text a:visited,
+.license-text a:hover, .license-text a:active {
+  color: #00CC00;
+}
+
+/*
+  ========================================
+  Quote - Warning Box
+  ========================================
+*/
+
+.quotation {
+  background-color: #00040C;
+  border-right: 10px solid #00CC00;
+  font-size: 18px;
+  font-style: italic;
+  width: 500px;
+  margin: 0.25em 0;
+  padding: 0.25em 40px;
+  line-height: 1.45em;
+  position: relative;
+  display: inline-block;
+}
+
+.quote-cite {
+  color: #999999;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+ 
+.quote-cite:before {
+  content: "\2014 \2009";
+}
+
+.warning {
+  background-color: #00040C;
+  border-right: 10px solid #FFCC00;
+  font-size: 18px;
+  font-style: italic;
+  width: 500px;
+  margin: 0.25em 0;
+  padding: 0.25em 40px;
+  line-height: 1.45em;
+  position: relative;
+  display: inline-block;
+}
+
+.alert {
+  background-color: #00040C;
+  border-right: 10px solid #FFF;
+  font-size: 18px;
+  font-style: italic;
+  width: 500px;
+  margin: 0.25em 0;
+  padding: 0.25em 40px;
+  line-height: 1.45em;
+  position: relative;
+  display: inline-block;
+}
+
+/*
+  ========================================
+  Buttons
+  ========================================
+*/
+
+.button {
+  border: 1px solid #00CC00;
+  background-color: #000;
+}
+
+/*
+  ========================================
+  Posts
+  ========================================
+*/
+
+.post {
+
+}
+
+.post-image {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.post-header {
+  padding-bottom: 16px;
+  color: #008000;
+  border-bottom: 1px solid #558000;
+  margin-bottom: 16px;
+}
+
+.post-title {
+  font-weight: bolder;
+  font-size: 25px;
+  padding-bottom: 8px;
+}
+
+.blog-post-title {
+  font-weight: bolder;
+  font-size: 25px;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  line-height: 1.4
+}
+
+.blog-post-title a:link, .blog-post-title a:visited,
+.blog-post-title a:hover, .blog-post-title a:active {
+  color: #008000;
+  text-decoration: none;
+}
+
+.blog-post-tags {
+  color: #CCCCCC;
+  margin-bottom: 4px;
+}
+
+.blog-post-tags a:link, .blog-post-tags a:visited, 
+.blog-post-tags a:hover, .blog-post-tags a:active {
+  color: #CCCCCC;
+  text-decoration: none;
+}
+
+.blog-post-categories {
+  color: #CCCCCC;
+  margin-bottom: 4px;
+}
+
+.blog-post-categories a:link, .blog-post-categories a:visited, 
+.blog-post-categories a:hover, .blog-post-categories a:active {
+  color: #CCCCCC;
+  text-decoration: none;
+}
+
+.blog-post-date {
+  color: #CCCCCC;
+  margin-bottom: 4px;
+}
+
+.post-content {
+  text-align: justify;
+  line-height: 1.70em;
+}
+
+.post-content a:link, .post-content a:visited, 
+.post-content a:hover, .post-content a:active {
+  color: #CCCCCC;
+  text-decoration: none;
+}
+
+.post-list {
+
+}
+
+.post-meta {
+  text-decoration: none;
+}
+
+.post-list-meta a:link, .post-list-meta a:visited,
+.post-list-meta a:hover, .post-list-meta a:active {
+  color: #00CC00;
+  text-decoration: none;
+}
+
+.post-tags {
+
+}
+
+/*legacy code*/
+.post-inline-title {
+  font-size: 27px;
+  color: #CCCCCC;
+  font-weight: bold;
+  padding-bottom: 25px;
+  padding-top: 8px;
+  line-height: normal;
+}
+
+.post-inline-header {
+  font-size: 27px;
+  color: #CCCCCC;
+  font-weight: bold;
+  padding-bottom: 25px;
+  padding-top: 8px;
+  line-height: normal;
+}
+
+.post-inline-subheader {
+  font-size: 20px;
+  color: #CCCCCC;
+  font-weight: bold;
+  padding-bottom: 25px;
+  padding-top: 8px;
+  line-height: normal;
+}
+
+.post-inline-subsubheader {
+  font-size: 16px;
+  color: #CCCCCC;
+  font-style: italic;
+  padding-bottom: 25px;
+  padding-top: 8px;
+  line-height: normal;
+}
+/*
+  ========================================
+  adjacent-post - <!-- footer content
+  ========================================
+*/
+
+.adjacent-post {
+  border-top: 1px solid #558000;
+  padding-top: 8px; 
+}
+
+.adjacent-post a:link, .adjacent-post a:visited,
+.adjacent-post a:hover, .adjacent-post a:active {
+  color: #008000;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/*
+  ========================================
+  Pages
+  ========================================
+*/
+
+.page-heading {
+  font-weight: bolder;
+  font-size: 25px;
+  padding-bottom: 16px;
+  color: #008000;
+  border-bottom: 1px solid #558000;
+}
+
+.page-post-meta {
+  margin-right: 45px;
+}
+
+/*
+  ========================================
+  Misc: metas dates;
+  ========================================
+*/
+
+.list-meta {
+  padding: 4px 2px;
+}
+
+.post-date {
+  color: #CCCCCC;
+}
+
+/*
+  ========================================
+  tags
+  ========================================
+*/
+
+.tag {
+
+}
+
+.tags-list {
+  margin-bottom: 36px;
+}
+
+.tag-list-item {
+  margin-bottom: 4px;
+}
+
+.tags-list a:link, .tags-list a:visited{
+  color: #00CC00;
+  text-decoration: none;
+}
+
+.tags-list a:hover, .tags-list a:active {
+  color: #00CC00;
+  border-bottom: 1px solid #00CC00;
+}
+
+.tag-list-title {
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.tags-item {
+  margin-bottom: 49px;
+}
+
+.site-tag a:link, .site-tag a:visited{
+  color: #00CC00;
+  text-decoration: none;
+}
+
+.site-tag a:hover, .site-tag a:active {
+  color: #00CC00;
+  border-bottom: 1px solid #00CC00;
+}
+
+/*
+  ========================================
+  Panels
+  ========================================
+*/
+
+.panel {
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #000;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px #000;
+  box-shadow: 0 1px 1px #000;
+}
+
+/*
+  ========================================
+  Series
+  ========================================
+*/
+
+.series-note a:link, .series-note a:visited,
+.series-note a:active, .series-note a:hover {
+  color: #CCCCCC;
+  text-decoration: none;
+}
+
+/*
+  ========================================
+  Pages
+  ========================================
+*/
+
+.formula-image {
+	float: right
+    display: block;
+}
+
