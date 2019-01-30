@@ -7,3 +7,6 @@ author: Kianoosh Naghavi
 markdown: kramdown
 encoding: utf-8
 timezone: Asia/Tehran
+
+#outputting
+permalink: :posts/:title.html
