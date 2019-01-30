@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+
+<html lang="fa">
+
+{% include head.html %}
+
+    <body class="bg-color font-family-vazir font-color-0c0">
+        
+        <!-- Header #area -->
+        {% include header.html %}
+        <!-- end of header context area -->
+
+        <section class="container main group">
+
+            <!-- side-bar #area -->
+                {% include sidebar.html %}
+            <!-- end of side-bar area -->
+
+            <!-- Main context #area -->
+            <section class="container context-main">                
+                {{ content }}
+            </section>
+            <!-- end of main context area -->
+
+        </section>
+        <!-- Footer context #area -->
+        {% include footer.html %}
+        <!-- end of footer context area -->
+    
+    </body>
+
+</html>
