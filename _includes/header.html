@@ -15,16 +15,25 @@
         <a {% if page.label == pg.label %} class="active" {% endif %} href="{{ site.baseurl }}">خانه</a>
       </li>
        <li>
-        <a {% if page.label == pg.label %} class="active" {% endif %} href="{{ site.baseurl }}">خانه</a>
+        <a {% if page.label == pg.label %} class="active" {% endif %} href="{{ site.baseurl }}/categories">دسته بندی ها</a>
       </li>
-      {% for pg in site.pages %}
-      {% if pg.showup_in_nav %}
+     <li>
+        <a {% if page.label == pg.label %} class="active" {% endif %} href="{{ site.baseurl }}/projects">کارها</a>
+      </li>
+      
       <li>
-        <a {% if page.label == pg.label %} class="active" {% endif %} href="{{ site.baseurl }}{{ pg.permalink }}">{{ pg.title }}</a>
+        <a {% if page.label == pg.label %} class="active" {% endif %} href="{{ site.baseurl }}/about-me">درباره من</a>
       </li>
-
-      {% endif %}
-      {% endfor %}
+      
+      
+      <li>
+        <a {% if page.label == pg.label %} class="active" {% endif %} href="{{ site.baseurl }}/contact">تماس با من</a>
+      </li>
+      
+      
+      <li>
+        <a {% if page.label == pg.label %} class="active" {% endif %} href="{{ site.baseurl }}/donate"><i class="fas fa-heart"></i>حمایت مالی</a>
+      </li>
     </ul>
 
 
