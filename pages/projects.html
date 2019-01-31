@@ -1,6 +1,6 @@
 ---
 layout: default
-title: کارها
+title: دسته بندی ها
 permalink: /projects
 label: projects
 showup_in_nav: true
@@ -9,14 +9,14 @@ showup_in_nav: true
 
 
 
-  <h3 class="text--right">کارها</h3>
+  <h3 class="text--right">دسته بندی ها</h3>
 
   <ul class="list--unstyled text--right">
     {% for project in site.projects %}
     <b>
         <li>
           <span class="pointer pointer--circular"></span>
-          <a href="{{ site.url }}{{ project.url }}">{{ project.title }}</a><small>( {{ project.about }} )</small>
+          <a href="{{ site.url }}{{ project.url }}">{{ project.title }}</a><small> ( {{ project.about }} )</small>
         </li>
     </b>
     {% endfor %}
