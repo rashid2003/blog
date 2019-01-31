@@ -22,14 +22,10 @@ layout: default
           <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
         </h3>
 
-        {% if post.tags.size > 0 %}
+        {% if post.category.size > 0 %}
         <nav class="post__tags">
-          <i class="icon pricon-tag"></i>
-          <ul class="list--unstyled list--inline">
-            {% for tag in post.tags %}
-            <li>#{{ tag }}</li>
-            {% endfor %}
-          </ul>
+          <i class="icon pricon-tag"></i>           
+          <b>دسته بندی  : <a href="{{ site.url }}/categories/{{ page.category }}">{{ post.category }}</a></b>           
         </nav>
         {% endif %}
 
