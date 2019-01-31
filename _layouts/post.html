@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+{% assign author = site.data.categories[page.category] %}
+
+{% assign tweet_url = "https://twitter.com/home?status=" | append: site.url | append: page.url %}
+
+{% assign tweet_url = "https://twitter.com/intent/tweet?url=" | append: page.url | append: "&via=" | append: site.url | append: "&text=" | append: page.title %}
+
+{% assign telegram_url = "https://telegram.me/share/url?url=" | append: site.url | append: page.url %}
+{% assign facebook_url = "https://facebook.com/share/url?url=" | append: site.url | append: page.url %}
+
+<article class="post post--single">
+  <h1 class="post__title post__title--single">{{ page.title }}</h1>
+<img src="{{ page.picture }}" class="postimg">
+<br>
+  <div class="post__share text--left">
+        <b><i class="far fa-calendar-alt"></i> <small>{{ page.pdate | date: "%-d / %-m / %Y" }}</small></b>
+   
+      <nav class="post__tags post__tags--single">
+          <b>دسته بندی  : <a href="{{ site.url }}/categories/{{ page.category }}">{{ page.category }}</a></b>
+</nav>
+
+  </div>
+
+  <div class="post__entry post__entry--single">
+    {{ content }}
+  </div>
+
+  <div class="post__share text--center">
+     {% if page.tags.size > 0 %}
+    
+      <nav class="post__tags post__tags--single">
+        <ul class="list--unstyled list--inline">
+           <b>تگ ها :</b>
+        {% for tag in page.tags %}
+          <li>#{{ tag }}</li>
+        {% endfor %}
+        </ul>
+      </nav>
+    {% endif %}
+    <br>
+    <ul class="list--unstyled list--inline">
+      <li><a class="button button--with-icon" target="_blank" href="{{ tweet_url }}">
+        <i class="fab fa-twitter"></i>
+        توییتر
+      </a></li>
+      <li><a class="button button--with-icon" target="_blank" href="{{ telegram_url }}">
+        <i class="fab fa-telegram"></i>
+        تلگرام
+      </a></li>
+            <li><a class="button button--with-icon" target="_blank" href="{{ facebook_url }}">
+        <i class="fab fa-facebook"></i>
+        فیسبوک
+      </a></li>
+    </ul>
+  </div>
+  {% include emojiparser.html %}
+  {% include disqus.html %}
+</article>
