@@ -12,10 +12,10 @@
        <li>
         <a {% if page.label == pg.label %} class="active" {% endif %} href="{{ site.baseurl }}">خانه</a>
       </li>
-      {% for pg in site.menus %}
+      {% for pg in site.pages %}
       {% if pg.showup_in_nav %}
       <li>
-        <a {% if menu.label == pg.label %} class="active" {% endif %} href="{{ site.baseurl }}{{ pg.permalink }}">{{ pg.title }}</a>
+        <a {% if page.label == pg.label %} class="active" {% endif %} href="{{ site.baseurl }}{{ pg.permalink }}">{{ pg.title }}</a>
       </li>
       {% endif %}
       {% endfor %}
