@@ -1,0 +1,25 @@
+---
+layout: default
+title: کارها
+permalink: /projects
+label: projects
+showup_in_nav: true
+---
+<article class="text--center author--single">
+
+
+
+  <h3 class="text--right">کارها</h3>
+
+  <ul class="list--unstyled text--right">
+    {% for category in site.categories %}
+    <b>
+        <li>
+          <span class="pointer pointer--circular"></span>
+          <a href="{{ site.url }}{{ project.url }}">{{ project.title }}</a><small>( {{ project.about }} )</small>
+        </li>
+    </b>
+    {% endfor %}
+  </ul>
+
+</article>
