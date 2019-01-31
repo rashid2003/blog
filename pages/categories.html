@@ -1,0 +1,25 @@
+---
+layout: default
+title: دسته بندی ها
+permalink: /categories
+label: categories
+showup_in_nav: true
+---
+<article class="text--center author--single">
+
+
+
+  <h3 class="text--right">دسته بندی ها</h3>
+
+  <ul class="list--unstyled text--right">
+    {% for category in site.categories %}
+    <b>
+        <li>
+          <span class="pointer pointer--circular"></span>
+          <a href="{{ site.url }}{{ category.url }}">{{ category.title }}</a>
+        </li>
+    </b>
+    {% endfor %}
+  </ul>
+
+</article>
