@@ -24,8 +24,7 @@ layout: default
 
         {% if post.category.size > 0 %}
         <nav class="post__tags">
-          <i class="icon pricon-tag"></i>           
-          <b>دسته بندی  : <a href="{{ site.url }}/categories/{{ page.category }}">{{ post.category }}</a></b>           
+          <small>دسته بندی  : <a href="{{ site.url }}/categories/{{ page.category }}">{{ post.category }}</a></small>           
         </nav>
         {% endif %}
 
