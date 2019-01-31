@@ -1,10 +1,13 @@
 ---
 layout: project
-fa_name: سیستم مدیریت کتابخانه
-en_name: library management
-unique_id: library_management
-title: سیستم مدیریت کتابخانه
-link: https://github.com/farskid
+fa_name: برنامه نویسی
+en_name: fun
+unique_id: fun
+title: برنامه نویسی
+github: https://github.com/farskid
+stackoverflow: http://stackoverflow.com/users/2784512/farzad-yz
 avatar: /assets/images/farzad.jpg
-about : "اینجا از برنامه نویسی میگویم"
+twitter: https://twitter.com/Farzad_YZ
+website: https://farzadyz.com
+bio: "اینجا از برنامه نویسی میگویم"
 ---
